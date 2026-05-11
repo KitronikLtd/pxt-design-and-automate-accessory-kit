@@ -1,5 +1,5 @@
 /**
- * Blocks for Driving the kitronik FarmBeats Expansion Board
+ * Blocks for Driving the Kitronik FarmBeats Expansion Board
  */
 //% weight=100 color=#00A654 icon="\uf06c" block="FarmBeats"
 // subcategory=["More"]
