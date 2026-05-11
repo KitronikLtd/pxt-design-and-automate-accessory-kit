@@ -1,24 +1,72 @@
+## pxt-kitronik-farmbeats
+Custom blocks for the Kitronik Farmbeats Expansion Board
 
-> Open this page at [https://jakeatkitronik.github.io/pxt-kitronik-farmbeats-expansion-board/](https://jakeatkitronik.github.io/pxt-kitronik-farmbeats-expansion-board/)
+The main FarmBeats Kit blocks include basic functionality to interact with an attached Pump, Servo or Soil Prong.
+
+For more information and educational resources, please visit (https://kitronik.co.uk).
 
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
+* open **[https://makecode.microbit.org/](https://makecode.microbit.org/)**
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
-* search for **https://github.com/jakeatkitronik/pxt-kitronik-farmbeats-expansion-board** and import
+* search for **[https://github.com/kitronikltd/FarmBeats](https://github.com/KitronikLtd/pxt-kitronik-farmbeats-kit)** and import
 
-## Edit this project
+# Main FarmBeats Pump Board Blocks
 
-To edit this repository in MakeCode.
+The following three blocks are available under the FarmBeats extension tab. 
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/jakeatkitronik/pxt-kitronik-farmbeats-expansion-board** and click import
+### turn pump [on/off]
 
-#### Metadata (used for search, rendering)
+Turns the output labelled as "pump" on or off.
+The state of the output can be toggled by a drop down menu. 
+By default, the pump is set to off.
+
+In this example, the pump output on the Pump Board is turned on for a second, before turning off:
+```blocks
+kitronikFarmBeats.turnPump(kitronikFarmBeats.PumpState.On)
+basic.pause(1000)
+kitronikFarmBeats.turnPump(kitronikFarmBeats.PumpState.Off)
+```
+
+### set servo angle [value] degrees
+
+When active, the servo motor will move to the angle specified. 
+This block is a wrapper to the standard Makecode "set servo [Pin] angle to [value]°"
+In this case, the pin is predefined to pin P1. 
+
+In the below example, a servo connected to the servo connection on the FarmBeats Pump Board moves to
+the 0° position, and then to 180° five seconds later:
+```blocks
+kitronikFarmBeats.setServoAngle(0)
+basic.pause(5000)
+kitronikFarmBeats.setServoAngle(180)
+```
+
+### Soil Prong Moisture Level
+
+Returns a value between 1 and 1023, dependent on the status of the soil prong. 
+
+In the below example, when the mositure level falls below a threshold, the pump output turns on.
+When the soil moisture threshold is exceeded, the pump turns off:
+```blocks
+let moisture = 0
+basic.forever(function () {
+    moisture = kitronikFarmBeats.soilProngMoisture()
+    if (moisture <= 400) {
+        kitronikFarmBeats.turnPump(kitronikFarmBeats.PumpState.On)
+    } else {
+        kitronikFarmBeats.turnPump(kitronikFarmBeats.PumpState.Off)
+    }
+})
+```
+
+## License
+
+MIT
+
+## Supported targets
 
 * for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
