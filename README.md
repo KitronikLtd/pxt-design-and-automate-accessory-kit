@@ -1,4 +1,4 @@
-## pxt-kitronik-farmbeats
+## pxt-kitronik-farmbeats-expansion-board
 Custom blocks for the Kitronik Farmbeats Expansion Board
 
 The main FarmBeats Kit blocks include basic functionality to interact with an attached Pump, Servo or Soil Prong.
