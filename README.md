@@ -12,7 +12,7 @@ This repository can be added as an **extension** in MakeCode.
 * open **[https://makecode.microbit.org/](https://makecode.microbit.org/)**
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
-* search for **[https://github.com/kitronikltd/FarmBeats](https://github.com/KitronikLtd/pxt-kitronik-farmbeats-kit)** and import
+* search for **[https://github.com/kitronikltd/FarmBeats](https://github.com/KitronikLtd/pxt-kitronik-farmbeats-expansion-board)** and import
 
 # Main FarmBeats Pump Board Blocks
 
