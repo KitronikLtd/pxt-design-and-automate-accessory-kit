@@ -2,7 +2,6 @@
  * Blocks for Driving the Kitronik FarmBeats Expansion Board
  */
 //% weight=100 color=#00A654 icon="\uf06c" block="FarmBeats"
-// subcategory=["More"]
 //% group = '["Pump",  "Servo", "Soil Prong"]'
 
 namespace kitronikFarmBeats {
@@ -24,7 +23,7 @@ namespace kitronikFarmBeats {
     ////////////////
 
     /**
-     * turn pump [pumpstate]: Turns the farmbeats pump output on or off, as defined by a drop down menu.
+     * turn pump [pumpstate]: turns the farmbeats pump output on or off, as defined by a drop down menu.
      * @param pumpstate : on - turns the pump output on. off - turns the pump output off.
      */
     //% blockId=farmbeats_turnPump
@@ -45,14 +44,12 @@ namespace kitronikFarmBeats {
         }
     }
 
-
-    //////
-    ////////
-    ////SERVO////
+    //////////////
+    ////SERVO/////
     //////////////
 
     /**
-     * set servo angle [degree] degrees: Moves an attached servo motor connected to the farmbeats pump board on the servo connector to the requested angle, defined by tbe parameter "degrees".
+     * set servo angle [degree] degrees: moves an attached servo motor connected to the farmbeats pump board on the servo connector to the requested angle, defined by tbe parameter "degrees".
      * @param degrees : how many degrees the attached servo motor needs to turn, for example, 90° 
      */
     //% blockId=farmbeats_setServoAngle
@@ -76,9 +73,9 @@ namespace kitronikFarmBeats {
     }
 
 
-    //////////////////
+    /////////////////////////
     ///SOIL-PRONG-MOISTURE///
-    ////////////////
+    /////////////////////////
 
     /**
      * soil prong moisture: returns a numerical value between 1 and 1023, depending on the detected moisture from the soil prong.
