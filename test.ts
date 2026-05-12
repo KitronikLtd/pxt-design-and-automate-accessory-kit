@@ -1,4 +1,4 @@
-// test program for the FarmBeats Pump Board Blocks. Should exercise all IO on the FarmBeats Pump Board,
+// test program for the Kitronik FarmBeats Expansion Board Blocks. Should exercise all IO on the FarmBeats Pump Board,
 // as well as all blocks within the FarmBeats Kit extension. 
 
 // infinite loop
