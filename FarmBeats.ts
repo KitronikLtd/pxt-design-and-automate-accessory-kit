@@ -60,6 +60,7 @@ namespace kitronikFarmBeats {
     //% degrees.shadow="protractorPicker"
     //% weight=100 blockGap=8
     //% group="Servo"
+    //% hiddenParts=microservo
     export function setServoAngle(degrees: number) {
         // Check if the degrees are greater than 180
         if (degrees > 180 || degrees < 0) {
