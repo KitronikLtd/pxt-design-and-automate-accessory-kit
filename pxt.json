@@ -1,11 +1,10 @@
 {
     "name": "pxt-kitronik-farmbeats-expansion-board",
     "version": "1.0.1",
-    "description": "",
+    "description": "Blocks to support the Kitronik FarmBeats Expansion board",
+    "license": "MIT",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*"
     },
     "files": [
         "FarmBeats.ts",
