@@ -1,7 +1,7 @@
 /**
  * Blocks for Driving the Design & Automate Accessory Kit
  */
-//% weight=100 color=#00A654 icon="\uf06c" block="FarmBeats"
+//% weight=100 color=#00A654 icon="\uf06c" block="Design_And_Automate"
 //% group = '["Pump",  "Servo", "Soil Prong"]'
 
 namespace designAndAutomate {
