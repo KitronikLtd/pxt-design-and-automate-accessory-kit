@@ -7,7 +7,7 @@
         "core": "*"
     },
     "files": [
-        "Design_Automate.ts",
+        "Design_And_Automate.ts",
         "README.md"
     ],
     "testFiles": [
