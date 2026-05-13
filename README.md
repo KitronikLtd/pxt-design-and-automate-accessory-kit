@@ -14,11 +14,11 @@ This repository can be added as an **extension** in MakeCode.
 * open **[https://makecode.microbit.org/](https://makecode.microbit.org/)**
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
-* search for **[https://github.com/kitronikltd/Design_And_Automate_Accessory_Kit](https://github.com/KitronikLtd/pxt-kitronik-farmbeats-expansion-board)** and import
+* search for **[pxt-design-and-automate-accessory-kit](https://github.com/KitronikLtd/pxt-kitronik-farmbeats-expansion-board)** and import
 
 # Main Design & Automate Accessory Kit Board Blocks
 
-The following three blocks are available under the FarmBeats extension tab. 
+The following three blocks are available under the Design and Automate extension tab. 
 
 ### turn pump [on/off]
 
