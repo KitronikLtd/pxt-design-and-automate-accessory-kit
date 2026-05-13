@@ -1,13 +1,13 @@
 {
-    "name": "pxt-kitronik-farmbeats-expansion-board",
-    "version": "1.0.1",
-    "description": "Blocks to support the Kitronik FarmBeats Expansion board",
+    "name": "pxt-design-and-automate-accessory-kit",
+    "version": "1.0.2",
+    "description": "Blocks to support the Design & Automate Accessory Kit",
     "license": "MIT",
     "dependencies": {
         "core": "*"
     },
     "files": [
-        "FarmBeats.ts",
+        "Design_Automate.ts",
         "README.md"
     ],
     "testFiles": [
