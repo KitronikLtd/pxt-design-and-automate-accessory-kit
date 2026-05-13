@@ -14,7 +14,7 @@ This repository can be added as an **extension** in MakeCode.
 * open **[https://makecode.microbit.org/](https://makecode.microbit.org/)**
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
-* search for **[pxt-design-and-automate-accessory-kit](https://github.com/KitronikLtd/pxt-kitronik-farmbeats-expansion-board)** and import
+* search for **[pxt-design-and-automate-accessory-kit](https://github.com/KitronikLtd/pxt-design-and-automate-accessory-kit)** and import
 
 # Main Design & Automate Accessory Kit Board Blocks
 
