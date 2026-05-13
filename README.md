@@ -26,7 +26,7 @@ Turns the output labelled as "pump" on or off.
 The state of the output can be toggled by a drop down menu. 
 By default, the pump is set to off.
 
-In this example, the pump output on the Pump Board is turned on for a second, before turning off:
+In this example, the pump output on the Design & Automate Accessory Kit Board is turned on for a second, before turning off:
 ```blocks
 designAndAutomate.turnPump(designAndAutomate.PumpState.On)
 basic.pause(1000)
@@ -39,7 +39,7 @@ When active, the servo motor will move to the angle specified.
 This block is a wrapper to the standard Makecode "set servo [Pin] angle to [value]°"
 In this case, the pin is predefined to pin P1. 
 
-In the below example, a servo connected to the servo connection on the FarmBeats Pump Board moves to
+In the below example, a servo connected to the servo connection on the Design & Automate Accessory Kit Board moves to
 the 0° position, and then to 180° five seconds later:
 ```blocks
 designAndAutomate.setServoAngle(0)
